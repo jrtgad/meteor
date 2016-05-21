@@ -1,0 +1,28 @@
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Temperatura</th>
+                    <th>Presión</th>
+                    <th>Humedad</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each tasks}} {{> task}} {{/each}}
+            </tbody>
+        </table>
+    </div>
+</body>
+<template name="task">
+    <tr>
+        <td>{{time}}</td>
+        <td>{{temperature}} ºC</td>
+        <td>{{pressure}} Mb</td>
+        <td>{{humidity}} %</td>
+    </tr>
+</template>

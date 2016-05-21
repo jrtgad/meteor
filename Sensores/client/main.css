@@ -1,0 +1,21 @@
+/* CSS declarations go here */
+
+body {
+    margin: 0 auto;
+    width: 960px;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border: solid 1px goldenrod;
+}
+
+th {
+    font-size: 2em;
+}
+
+td,
+h1 {
+    text-align: center;
+}
