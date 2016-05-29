@@ -13,16 +13,16 @@
                 </tr>
             </thead>
             <tbody>
-                {{#each data}} {{> data}} {{/each}}
+                {{#each Data}} {{> sensorData}} {{/each}}
             </tbody>
         </table>
     </div>
 </body>
-<template name="data">
+<template name="sensorData">
     <tr>
-        <td>{{data.time}}</td>
-        <td>{{data.temperature}} ºC</td>
-        <td>{{data.pressure}} Mb</td>
-        <td>{{data.humidity}} %</td>
+        <td id="time">{{ time }}</td>
+        <td><span id="temp">{{ temperature }}</span>ºC</td>
+        <td><span id="pressure">{{ pressure }}</span>Mb</td>
+        <td><span id="humidity">{{ humidity }}</span>%</td>
     </tr>
 </template>
