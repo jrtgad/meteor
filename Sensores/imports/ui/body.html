@@ -13,16 +13,16 @@
                 </tr>
             </thead>
             <tbody>
-                {{#each tasks}} {{> task}} {{/each}}
+                {{#each data}} {{> data}} {{/each}}
             </tbody>
         </table>
     </div>
 </body>
-<template name="task">
+<template name="data">
     <tr>
-        <td>{{time}}</td>
-        <td>{{temperature}} ºC</td>
-        <td>{{pressure}} Mb</td>
-        <td>{{humidity}} %</td>
+        <td>{{data.time}}</td>
+        <td>{{data.temperature}} ºC</td>
+        <td>{{data.pressure}} Mb</td>
+        <td>{{data.humidity}} %</td>
     </tr>
 </template>
