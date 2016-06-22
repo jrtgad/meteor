@@ -1,0 +1,41 @@
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Temperatura</th>
+                    <th>Presión</th>
+                    <th>Humedad</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each Data}} {{> sensorData}} {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div id="resto">
+        <div id="titulos">
+            <ul>
+                <li>Temperatura:</li>
+                <li>Presión:</li>
+                <li>Humedad:</li>
+            </ul>
+        </div>
+        <div id="datos">
+            <ul>
+                <li><span>ºC</span> - Grados centígrados</li>
+                <li><span>Mb</span> - Milibares</li>
+                <li><span>%</span> - Porcentaje</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<template name="sensorData">
+    <tr>
+        <td id="time">{{ time }}</td>
+        <td>{{ temperature }} ºC</td>
+        <td>{{ pressure }} Mb</td>
+        <td>{{ humidity }} %</td>
+    </tr>
+</template>

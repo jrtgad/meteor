@@ -1,0 +1,14 @@
+{
+    "name": "sensores",
+    "private": true,
+    "scripts": {
+        "start": "meteor run"
+    },
+    "dependencies": {
+        "bufferutil": "^1.2.1",
+        "fibers": "^1.0.13",
+        "meteor-node-stubs": "~0.2.0",
+        "mqtt": "^1.11.0",
+        "utf-8-validate": "^1.2.1"
+    }
+}

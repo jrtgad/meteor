@@ -1,0 +1,81 @@
+/* CSS declarations go here */
+
+body {
+    margin: 0 auto;
+    width: 960px;
+    background: #01BFFF;
+}
+
+table {
+    position: relative;
+    left: -140px;
+    margin: 0 auto;
+    width: 140%;
+    border: solid 1px yellow;
+    background-color: #1E90FF;
+    box-shadow: 10px 10px 10px black;
+    height: 75px;
+    cursor: default;
+}
+
+th {
+    font-size: 2em;
+    color: #3927C6;
+}
+
+tbody {
+    height: 90px;
+}
+
+h1 {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    color: gold;
+    width: 120px;
+    background-color: darkBlue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+td:hover {
+    font-size: 1.2em;
+}
+
+#resto {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.7em;
+    text-align: center;
+    background-color: lightBlue;
+}
+
+#titulos {
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    color: #3927C6;
+}
+
+#datos {
+    display: inline-block;
+    text-align: left;
+    color: #3927C6;
+}
+
+span {
+    color: red;
+}
+
+#titulo1 {
+    color: black;
+}
+
+#titulo2 {
+    color: #DC143C;
+}
